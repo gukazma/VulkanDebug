@@ -1,4 +1,4 @@
-set(TARGET_NAME "VulkanInstance")
+set(TARGET_NAME "Smart3DVulkan")
 
 file(GLOB_RECURSE HEADER_FILES "*.h")
 file(GLOB_RECURSE HPP_FILES "*.hpp")
@@ -28,5 +28,5 @@ target_include_directories(
 
 set_target_properties(${TARGET_NAME}
     PROPERTIES
-        FOLDER Modules/Common
+        FOLDER Modules
 )
