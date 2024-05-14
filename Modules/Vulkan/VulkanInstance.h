@@ -8,6 +8,7 @@ public:
     ~VulkanInstance();
 
     static VulkanInstance* Create(bool bEnableSurface, bool bValidLayers = false);
+    bool                   Init(bool bEnableSurface);
     size_t                 GetDeviceCount() const;
     void                   AddInstanceExtension(const char* pszInstanceExtensionName);
 

@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
-TEST(MYTEST0, A)
+#include "VulkanInstance.h"
+TEST(Smart3DTest,Test1)
 {
-
+    auto vulkaninstance = VulkanInstance::Create(true, true);
+    EXPECT_TRUE(vulkaninstance);
 }

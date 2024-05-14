@@ -24,7 +24,7 @@ target_link_libraries(${TARGET_NAME}
 target_include_directories(
   ${TARGET_NAME} 
   PUBLIC 
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Include>
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 set_target_properties(${TARGET_NAME}
