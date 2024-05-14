@@ -18,6 +18,7 @@ target_compile_options(${TARGET_NAME} PUBLIC "$<$<COMPILE_LANG_AND_ID:CXX,MSVC>:
 # Link dependencies    
 target_link_libraries(${TARGET_NAME} 
     PUBLIC
+    Vulkan::Vulkan
           )
 
 target_include_directories(
