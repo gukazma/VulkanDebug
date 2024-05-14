@@ -88,6 +88,7 @@ bool VulkanInstance::Init(bool bEnableSurface) {
     else {
         instance_info.pNext = NULL;
     }
+    VkResult nErr = vkCreateInstance(&instance_info, VK_NULL_HANDLE, &m_instance);
 }
 
 size_t VulkanInstance::GetDeviceCount() const
